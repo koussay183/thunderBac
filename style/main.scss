@@ -1,0 +1,32 @@
+// import fonts
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+// variables
+$dark-color: #2a3137;
+$main-color: #006aff;
+$light-color: #f1f5f8;
+$text-color: #102a42;
+$hFont: "Montserrat", sans-serif;
+$textFont: "Quicksand", sans-serif, Helvetica, Arial;
+// import external scss files
+@import "./pre";
+@import "./navBar";
+@import "./hero";
+@import "./slider"; // body and the always style
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+* {
+  box-sizing: border-box;
+}
+.holder {
+  position: relative;
+  width: 100%;
+}
+.toggleMenu {
+  display: flex;
+  flex-flow: column;
+  min-width: 250px;
+}

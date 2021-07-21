@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+.pre {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f1f5f8;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2a3137;
+  -webkit-animation-timing-function: cubic-bezier(0, 1, 1, 0);
+          animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  -webkit-animation: lds-ellipsis1 0.6s infinite;
+          animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  -webkit-animation: lds-ellipsis2 0.6s infinite;
+          animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  -webkit-animation: lds-ellipsis2 0.6s infinite;
+          animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  -webkit-animation: lds-ellipsis3 0.6s infinite;
+          animation: lds-ellipsis3 0.6s infinite;
+}
+
+@-webkit-keyframes lds-ellipsis1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes lds-ellipsis3 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes lds-ellipsis3 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes lds-ellipsis2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(24px, 0);
+            transform: translate(24px, 0);
+  }
+}
+
+@keyframes lds-ellipsis2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(24px, 0);
+            transform: translate(24px, 0);
+  }
+}
+
+nav {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em;
+  background: transparent;
+  top: 0;
+  z-index: 99;
+  background-color: black;
+}
+
+nav .innerNav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1500px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+nav .innerNav .logo {
+  width: 100%;
+  max-width: 150px;
+}
+
+nav .innerNav .menuToggler {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 100%;
+  max-width: 45px;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+nav .innerNav .menuToggler span {
+  width: 100%;
+  height: 4px;
+  margin: 0.2em 0;
+  border-radius: 50px;
+  background-color: #f1f5f8;
+}
+
+nav .innerNav .menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .innerNav .menu li {
+  font-family: "Quicksand", sans-serif, Helvetica, Arial;
+  margin: 0 2em;
+  text-transform: capitalize;
+  font-size: 1.1em;
+}
+
+nav .innerNav .menu li a {
+  text-decoration: none;
+  color: #f1f5f8;
+}
+
+.responsiveMenu {
+  position: fixed;
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  text-align: center;
+  z-index: 99;
+}
+
+.responsiveMenu .menu-2 {
+  padding: 0%;
+  font-size: 2em;
+  list-style: none;
+}
+
+.responsiveMenu .menu-2 li {
+  margin: 2em 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.responsiveMenu .menu-2 li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.responsiveMenu .menu-2 li a {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+  font-family: "Quicksand", sans-serif, Helvetica, Arial;
+}
+
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.togglerStart {
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+}
+
+.togglerStart #inner1 {
+  width: 40px;
+}
+
+.togglerStart #inner2 {
+  display: none;
+}
+
+.togglerStart #inner3 {
+  width: 25px;
+}
+
+@media (max-width: 788px) {
+  nav {
+    padding: 1em 2em;
+  }
+  nav .innerNav .menuToggler {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .innerNav .menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 790px) {
+  .responsiveMenu {
+    display: none;
+  }
+}
+
+.hero {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1614687154052-e05046c3feec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&q=80");
+  background-size: cover;
+  background-position: 0%;
+  color: white;
+  padding: 2em 3em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero h1 {
+  text-transform: uppercase;
+  margin-top: 170px;
+  max-width: 400px;
+  line-height: 1.7em;
+  padding-left: 1em;
+}
+
+@media screen and (max-width: 500px) {
+  .hero h1 {
+    padding-left: 0.2em;
+  }
+}
+
+.carsImageHolder {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+  margin: 3em auto;
+  overflow: hidden;
+}
+
+.carsImageHolder h2 {
+  font-family: "Quicksand", sans-serif, Helvetica, Arial;
+  text-transform: capitalize;
+  padding-left: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  font-weight: 10000;
+}
+
+.carsImageHolder h2 span {
+  font-size: 1.5em;
+  margin: 0.1em 0 0 0.3em;
+}
+
+.carsImageHolder .innerCarsImageHolder {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  overflow: hidden;
+}
+
+.carsImageHolder .innerCarsImageHolder .carImage {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  overflow: hidden;
+  margin: 1em;
+  border-radius: 10px;
+}
+
+.carsImageHolder .innerCarsImageHolder .carImage img {
+  width: 100%;
+  max-height: 566px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.holder {
+  position: relative;
+  width: 100%;
+}
+
+.toggleMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  min-width: 250px;
+}
+/*# sourceMappingURL=main.css.map */
