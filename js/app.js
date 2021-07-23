@@ -1,6 +1,6 @@
 // hide the preloader on the load of page
 $(()=>{
-    $("#pre").hide();
+    setInterval($("#pre").hide(),3000)
     $('.menuToggler').click(()=>{
         $(".menuToggler").toggleClass("togglerStart");
         $('.responsiveMenu').toggleClass("active");
