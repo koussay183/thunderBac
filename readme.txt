@@ -1,0 +1,1 @@
+i just finished the project i changed the main color to black and white i rlly love that color and i added some pics to website you can make onother page for rest of the team i already maked a button that takes you to that page and no need for new style for team member card you can use mine and don't forget to put your social media links in the footer 
