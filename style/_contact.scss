@@ -1,0 +1,83 @@
+.contact {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5em 0;
+  .innerContact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+    flex-direction: column;
+    background-color: black;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    h1 {
+      font-family: $textFont;
+      text-transform: capitalize;
+      max-width: 250px;
+      margin: 0 auto;
+      margin-bottom: 0.5em;
+      color: white;
+    }
+    form {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 300px;
+      margin: auto;
+      font-family: $textFont;
+      text-transform: capitalize;
+      label {
+        font-size: 1.2em;
+        color: white;
+        margin-bottom: 0.2em;
+      }
+      input {
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 5px;
+        font-size: 1em;
+        outline: none;
+        padding: 0.5em 0.5em;
+        text-transform: capitalize;
+        font-family: $textFont;
+        margin-bottom: 0.5em;
+      }
+      textarea {
+        font-family: $textFont;
+        border: 2px solid rgb(255, 255, 255);
+        margin-top: 0.5em;
+        border-radius: 5px;
+        padding: 0.7em 0.7em;
+        text-transform: capitalize;
+        font-size: 1em;
+      }
+      button {
+        outline: none;
+        color: black;
+        background: white;
+        border: none;
+        border-radius: 5px;
+        font-family: $textFont;
+        font-size: 1em;
+        padding: 0.5em 0;
+        margin: 0.7em 0 0 0;
+        text-transform: capitalize;
+        transition: all 0.5s ease;
+        cursor: pointer;
+        &:hover {
+          background-color: rgba(41, 47, 58, 0.589);
+          color: white;
+        }
+      }
+    }
+  }
+}
+textarea {
+  resize: none;
+}

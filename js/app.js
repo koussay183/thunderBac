@@ -13,5 +13,9 @@ $(()=>{
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: '60px'
-      });           
+      });
+    $(".menu-2>li").click(()=>{
+        $('.responsiveMenu').removeClass("active");
+        $(".menuToggler").toggleClass("togglerStart");
+    })           
 });

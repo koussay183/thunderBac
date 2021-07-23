@@ -1,0 +1,25 @@
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-transform: capitalize;
+  color: white;
+  background-color: black;
+  padding-bottom: 1em;
+  h1 {
+    font-family: $textFont;
+    font-size: 1.1em;
+  }
+  .socialMediaRow {
+    position: relative;
+    span {
+      margin: 0 0.5em;
+      a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 1.3em;
+      }
+    }
+  }
+}

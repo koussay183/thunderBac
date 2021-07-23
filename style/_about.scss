@@ -1,0 +1,50 @@
+.aboutUs {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1570854255700-5e5f836cf269?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&q=80");
+  background-position: 50%;
+  background-size: cover;
+  margin-top: 2em;
+  padding: 2em 0;
+  justify-content: center;
+  background-position-y: 88%;
+  .innerAboutUs {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    max-width: 800px;
+    padding: 2em;
+    color: white;
+    h1 {
+      font-family: $textFont;
+    }
+    #aboutUsLabel {
+      text-transform: capitalize;
+      font-size: 3.5em;
+      margin-bottom: 0em;
+    }
+    #logoName {
+      margin-bottom: 0.4em;
+    }
+    p {
+      font-family: $textFont;
+      line-height: 2.3em;
+      text-transform: capitalize;
+      width: 100%;
+      max-width: 700px;
+      margin-top: 0;
+      text-align: justify;
+    }
+  }
+}
+
+// responsive
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+  .aboutUs {
+    margin: 2em 1em;
+    border-radius: 7px;
+  }
+}

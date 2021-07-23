@@ -12,14 +12,19 @@ $textFont: "Quicksand", sans-serif, Helvetica, Arial;
 @import "./pre";
 @import "./navBar";
 @import "./hero";
-@import "./slider"; // body and the always style
+@import "./slider";
+@import "./team";
+@import "./about";
+@import "./contact";
+@import "./footer";
+// body and the always style
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
 }
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 .holder {
   position: relative;
