@@ -17,5 +17,6 @@ $(()=>{
     $(".menu-2>li").click(()=>{
         $('.responsiveMenu').removeClass("active");
         $(".menuToggler").toggleClass("togglerStart");
-    })           
+    });
+    AOS.init();           
 });
